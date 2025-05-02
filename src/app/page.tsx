@@ -80,7 +80,7 @@ export type Summary = {
   content: string
 }
 
-function CVGeneratorContent() {
+export function CVGeneratorContent() {
   const [personalInfo, setPersonalInfo] = useState<PersonalInfo>({
     fullName: "",
     email: "",

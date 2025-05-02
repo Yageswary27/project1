@@ -1,9 +1,7 @@
-import { PersonalInfoForm } from './components/personal-info-form';
-import { EducationForm } from './components/education-form';
-import { SummaryForm } from './components/summary-form';
-import { ExperienceForm } from './components/experience-form';
-import { LanguagesForm } from './components/languages-form';
+
 import { ThemeProvider } from './components/theme-context';
+import { CVGeneratorContent } from './app/page';
+
 
 const App: React.FC = () => {
   return (
@@ -13,27 +11,9 @@ const App: React.FC = () => {
 
         <section>
           <h2 className="text-xl font-semibold mb-2">Personal Information</h2>
-          <PersonalInfoForm />
-        </section>
+          <CVGeneratorContent
+        />
 
-        <section>
-          <h2 className="text-xl font-semibold mb-2">Education</h2>
-          <EducationForm />
-        </section>
-
-        <section>
-          <h2 className="text-xl font-semibold mb-2">Work Experience</h2>
-          <ExperienceForm />
-        </section>
-
-        <section>
-          <h2 className="text-xl font-semibold mb-2">Languages</h2>
-          <LanguagesForm />
-        </section>
-
-        <section>
-          <h2 className="text-xl font-semibold mb-2">Summary</h2>
-          <SummaryForm />
         </section>
       </div>
     </ThemeProvider>
